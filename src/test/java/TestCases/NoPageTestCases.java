@@ -23,7 +23,7 @@ public class NoPageTestCases {
         driver.quit();
     }
 
-    /*@Test(priority = 1)
+     @Test(priority = 1)
      public void SingleInputFieldMessage() {
      driver.get("https://www.lambdatest.com/selenium-playground/simple-form-demo");
      driver.findElement(By.id("user-message")).sendKeys("Hello, World!");
@@ -81,7 +81,7 @@ public class NoPageTestCases {
     String expectedTitle = "Selenium Playground | LambdaTest";
     String actualTitle = driver.getTitle();
     Assert.assertEquals(actualTitle, expectedTitle, "Title is not as expected");
-     } */
+     }
 
 
 
