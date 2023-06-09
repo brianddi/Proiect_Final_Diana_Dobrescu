@@ -32,7 +32,5 @@ public class BasePage {
         driver.quit();
     }
 
-        public void get(String s) {
 
-    }
 }
