@@ -16,18 +16,18 @@ public class CheckboxPage extends BasePage{
     By SingleCheckbox = By.id("isAgeSelected");
     public void clickOnSingleCheckbox(){ driver.findElement(SingleCheckbox);}
 
-    By FirstCheckboxOption = By.id("ex1-check1");
+    By FirstCheckboxOption = By.xpath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/div[2]/div[1]/div[1]/input");
     public void clickOnTheFirstCheckboxOption(){driver.findElement(FirstCheckboxOption).click();}
 
-    By SecondCheckboxOption = By.id("ex1-check2");
+    By SecondCheckboxOption = By.xpath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/div[2]/div[1]/div[2]/input");
     public void clickOnTheSecondCheckboxOption(){driver.findElement(SecondCheckboxOption).click();}
 
-    By ThirdCheckboxOption = By.id("/html/body/div[1]/div/section[3]/div/div/div[2]/div[2]/div[2]/div/div[2]/div[4]/input");
+    By ThirdCheckboxOption = By.xpath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/div[2]/div[1]/div[3]/input");
     public void clickOnTheThirdCheckboxOption(){driver.findElement(ThirdCheckboxOption).click();}
 
-    By ForthCheckboxOption = By.xpath("ex1-check3");
-    public void clickOnTheForthCheckboxOption(){driver.findElement(ForthCheckboxOption).click();}
+    By FourthCheckboxOption = By.xpath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/div[2]/div[1]/div[4]/input");
+    public void clickOnTheFourthCheckboxOption(){driver.findElement(FourthCheckboxOption).click();}
 
-    By CheckAllOption = By.xpath("/html/body/div[1]/div/section[2]/div/div/div/div[2]/div[2]/div/div[2]/input");
+    By CheckAllOption = By.xpath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/div[2]/div[1]/div[4]/input");
     public void clickOnTheCheckAllButton(){driver.findElement(CheckAllOption).click();}
 }

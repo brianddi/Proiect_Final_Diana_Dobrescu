@@ -8,7 +8,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class NoPageTestCases {
+public class SingleInputFieldTestCases {
 
     private WebDriver driver;
 
@@ -23,7 +23,9 @@ public class NoPageTestCases {
         driver.quit();
     }
 
+
      @Test(priority = 1)
+
      public void SingleInputFieldMessage() {
      driver.get("https://www.lambdatest.com/selenium-playground/simple-form-demo");
      driver.findElement(By.id("user-message")).sendKeys("Hello, World!");
@@ -82,7 +84,5 @@ public class NoPageTestCases {
     String actualTitle = driver.getTitle();
     Assert.assertEquals(actualTitle, expectedTitle, "Title is not as expected");
      }
-
-
 
 }

@@ -17,6 +17,7 @@ public class RadioButtonTest extends BasePage {
         super.setUp();
         radioButtonDemo = new RadioButtonPage(driver);
     }
+
     @Test
     public void SelectMaleButton() throws InterruptedException{
         driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div/div/div[1]/div[1]/ul/li[3]/a")).click();
@@ -83,5 +84,14 @@ public class RadioButtonTest extends BasePage {
         Assert.assertTrue(radioButtonDemo.isFirstAgeSelected());
     }
 
+    @Test
+    public void SelectSecondFemaleAndFirstAgeButton() throws InterruptedException {
+        driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div/div/div[1]/div[1]/ul/li[3]/a")).click();
+        radioButtonDemo.clickOnSecondFemale();
+        radioButtonDemo.clickOnFirstAge();
+        radioButtonDemo.clickOnSecondGetValue();
+        Assert.assertTrue(radioButtonDemo.isSecondMaleSelected());
+        Assert.assertTrue(radioButtonDemo.isFirstAgeSelected());
 
+}
 }

@@ -1,20 +1,17 @@
 package TestCases;
-import Pages.SimpleFormPage;
+import Pages.SimpleFormDemoPage;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import Pages.BasePage;
 
-
-import Pages.BasePage;
-
-public class SimpleFormTestCases extends BasePage {
-    private SimpleFormPage simpleFormPage;
+public class SimpleFormDemoTestCases extends BasePage {
+    private SimpleFormDemoPage simpleFormPage;
 
     @BeforeMethod
     public void setUp(){
         super.setUp();
-        simpleFormPage = new SimpleFormPage(driver);
+        simpleFormPage = new SimpleFormDemoPage(driver);
     }
     @Test
     public void writeTextThenClickOnTheGetCheckedValueButton() throws InterruptedException{

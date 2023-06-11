@@ -3,11 +3,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 
-public class SimpleFormPage extends BasePage {
+public class SimpleFormDemoPage extends BasePage {
     /*super can be used to refer immediate parent class instance variable.
     super can be used to invoke immediate parent class method.
     super() can be used to invoke immediate parent class constructor.*/
-    public SimpleFormPage(WebDriver driver){
+    public SimpleFormDemoPage(WebDriver driver){
             super(driver);
         }
 
@@ -18,7 +18,7 @@ public class SimpleFormPage extends BasePage {
         //Locators for Two Input Fields
         By TwoInputFieldsEnterA = By.id("sum1");
         By TwoInputFieldsEnterB = By.id("sum2");
-        By GetValuesButton = By.xpath("//*[@id=\"gettotal\"]/button");
+        By GetValuesButton = By.xpath("/html/body/div[1]/div/section[2]/div/div/div/div[2]/div[2]/div/div[1]/form/button");
 
 
         //Method to click on Single and Two input fiels
